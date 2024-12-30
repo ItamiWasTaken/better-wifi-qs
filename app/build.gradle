@@ -29,24 +29,6 @@ android {
             ext.enableCrashlytics = false
         }
     }
-    flavorDimensions = ["distribution"]
-    productFlavors {
-        playstore {
-            dimension "distribution"
-            versionNameSuffix "-playstore"
-            ext.useGoogleGcm = true
-        }
-        github {
-            dimension "distribution"
-            versionNameSuffix "-github"
-            ext.useGoogleGcm = true
-        }
-        fdroid {
-            dimension "distribution"
-            versionNameSuffix "-fdroid"
-            ext.useGoogleGcm = false
-        }
-    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
